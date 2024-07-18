@@ -1,8 +1,9 @@
 /* Extra small devices (phones, 450x and down) */
 .eventList {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+    display: grid;
+    row-gap: 4rem;
+    grid-template-columns: 100%;
+    grid-auto-rows: 15rem;
 }
 
 .eventCard {
@@ -37,25 +38,16 @@
     display: none;
 }
 
-@media only screen and (min-width: 450px) {
+@media (min-width: 600px) {
     .eventList {
-        border: 2px solid red;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 2rem;
+        grid-template-columns: repeat(3, minmax(100px, 100%));
+        column-gap: 4rem;
+        grid-auto-rows: 25rem;
     }
+}
 
-    .eventCard {
-      height: 25rem;
-      width: 100%;
-      max-width: 30rem;
-      /* 
-      quero que o elemento ocupe todo o espaço disponivel
-      mas que quando ele alcande um determinado tamanho maximo, os elemtnos quebrem para a prox linhas
-      nessa quebra todos os elementos tem de ter esse determinado tamanho
-      nao deve ter espaços sobrando dentro do wrapper
-       */
-      
-       
+@media (min-width: 950px) {
+    .eventList {
+        grid-template-columns: repeat(5, minmax(100px, 100%));
     }
 }
