@@ -1,4 +1,3 @@
-import React from 'react'
 import style from './navigation.module.css'
 
 const Navigation = () => {
@@ -11,4 +10,4 @@ const Navigation = () => {
   )
 }
 
-export default React.memo(Navigation)
+export default Navigation
