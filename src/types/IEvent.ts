@@ -6,5 +6,6 @@ export interface IEvent {
     firstDay: string,
     lastDay: string,
     startTime: string,
-    subscriptionUrl: string
+    subscriptionUrl: string,
+    formatedFirstDate: string
 }
