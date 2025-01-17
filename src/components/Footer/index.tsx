@@ -1,8 +1,7 @@
-import styles from './footer.module.css'
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className="border-t border-t-solid border-t-gray-medium px-9 py-6">
         Desenvolvido por <address>@fnsigor</address>
     </footer>
   )

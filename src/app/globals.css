@@ -1,19 +1,6 @@
-:root {
-    font-size: 62.5%;
-
-    --bg: #232323;
-
-    --gray-medium: #858585;
-    --gray-dark: #353535;
-
-    --white: #fff;
-
-    --purple-medium: #8437b1;
-
-    --green: #6bbe4e;
-
-    --overflow: #00000090;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
     box-sizing: border-box;
@@ -21,11 +8,11 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
-    color: var(--white);
+    color: theme('colors.white');
 }
 
 body {
-    background-color: var(--bg);
+    background-color: theme('colors.bg');
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -35,38 +22,5 @@ body {
 body > main {
     flex-grow: 1;
     margin-bottom: 5rem;
-}
-
-body > header {
-    border-bottom: 1px solid var(--gray-medium);
-    margin-bottom: 5rem;
-}
-
-body > header h1 {
-    font-size: 1.8rem;
-}
-
-
-body > footer {
-    border-top: 1px solid var(--gray-medium);
-}
-
-body > header h1 {
-    font-size: 1.8rem;
-}
-
-body > main,
-body > footer,
-body > header {
     padding-inline: 2rem;
-}
-
-body > footer,
-body > header {
-    padding-block: 1.4rem;
-}
-
-.section-header h2 {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
 }
