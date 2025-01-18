@@ -1,7 +1,7 @@
 'use client'
 
 import {ComponentProps,forwardRef, useState} from "react"
-import { Button } from '@/components/Shadcn/button'
+import { Button } from '@/components/ui/button'
 import { cn } from "@/lib/utils"
 import EyeOpen from "@/assets/icons/EyeOpen.svg"
 import EyeNone from "@/assets/icons/EyeNone.svg"

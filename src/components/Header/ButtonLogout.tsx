@@ -1,5 +1,5 @@
 
-import { Button } from "@/components/Shadcn/button"
+import { Button } from "@/components/ui/button"
 
 const ButtonLogout = () => {
     return (

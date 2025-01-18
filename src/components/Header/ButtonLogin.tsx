@@ -1,4 +1,4 @@
-import { Button } from "@/components/Shadcn/button";
+import { Button } from "@/components/ui/button";
 import {
     Dialog,
     DialogContent,
@@ -6,7 +6,7 @@ import {
     DialogHeader,
     DialogTitle,
     DialogTrigger,
-} from "@/components/Shadcn/dialog";
+} from "@/components/ui/dialog";
 import LoginForm from "./LoginForm";
 
 const ButtonLogin = () => {
