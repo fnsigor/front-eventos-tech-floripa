@@ -24,3 +24,9 @@ body > main {
     margin-bottom: 5rem;
     padding-inline: 2rem;
 }
+
+@layer base {
+  :root {
+        --radius: 0.5rem;
+    }
+}
