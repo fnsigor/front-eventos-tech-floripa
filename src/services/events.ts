@@ -93,7 +93,7 @@ const mocks = {
 
 export async function getEvents(): Promise<GetAllActiveEventsOutputDto> {
 
-  return mocks.success
+  return await new Promise(resolve => setTimeout(() => resolve(mocks.success), 1000 * 1))
 
   try {
     const response = await fetch(`${apiUrl}/event/getAll`, {
